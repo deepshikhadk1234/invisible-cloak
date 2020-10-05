@@ -26,12 +26,9 @@ while (cap.isOpened()):
     count += 1
     img = np.flip(img, axis=1)
 
-   
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
     
-    
-   
     lower_red = np.array([0, 120, 50])
     upper_red = np.array([10, 255,255])
     mask1 = cv2.inRange(hsv, lower_red, upper_red)
@@ -52,7 +49,10 @@ while (cap.isOpened()):
     
     res1 = cv2.bitwise_and(img, img, mask=mask2)
 
+
     
+   
+
     res2 = cv2.bitwise_and(background, background, mask=mask1)
 
     
@@ -73,3 +73,4 @@ cv2.destroyAllWindows()
 #lower_red = np.array([0, 0, 70])
 #upper_red = np.array([100, 255,255])
 # mask1 = cv2.inRange(hsv, lower_red, upper_red)
+
