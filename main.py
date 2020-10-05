@@ -58,7 +58,7 @@ while (cap.isOpened()):
     
     finalOutput = cv2.addWeighted(res1, 1, res2, 1, 0)
     out.write(finalOutput)
-    cv2.imshow("magic", finalOutput)
+    cv2.imshow("Invisibility", finalOutput)
     cv2.waitKey(1)
 
 
