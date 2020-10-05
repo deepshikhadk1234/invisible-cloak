@@ -49,3 +49,5 @@ cap.release()
 out.release()
 cv2.destroyAllWindows()
 
+
+##green screening technique where the background is removed.
